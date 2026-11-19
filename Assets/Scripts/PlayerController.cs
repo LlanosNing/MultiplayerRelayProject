@@ -7,7 +7,7 @@ public class PlayerController : NetworkBehaviour
 
     private Rigidbody rb;
 
-    private Vector2 input;
+    private Vector3 input;
 
     private void Start()
     {
