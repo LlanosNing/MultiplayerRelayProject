@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -21,6 +22,9 @@ public class ColorManager : NetworkBehaviour
     //Diccionario para guardar cuántos colores de cada tile quedan disponibles
     //Así nos aseguramos de que salga la misma cantidad de tiles de cada color
     private Dictionary<TileColor, int> availableColors = new();
+
+    [Header("UI")]
+    [SerializeField] private TMP_Text safeColorTxt;
     private void Start()
     {
         //Buscar el grid con todos los tiles y guardarlos
@@ -81,6 +85,9 @@ public class ColorManager : NetworkBehaviour
             //Asignar el color y el material a cada tile
             tiles[i].SetupColor(randomColor, colorMaterials[materialIndex]);
         }
+
+        //Actualizar el texto del color seguro cuando cambie su valor
+        safeColor.OnValueChanged += UpdateSafeColor;
     }
 
     //Devuelve un color aleatorio de todos los posibles
@@ -99,5 +106,13 @@ public class ColorManager : NetworkBehaviour
             availableColors.Remove(chosenColor);
         }
         return chosenColor;
+    }
+
+    //Se añade al callback OnValueChanged de la variable color seguro
+    void UpdateSafeColor(TileColor oldColor, TileColor newColor)
+    {
+        //Actualizar el nombre y el color del texto
+        safeColorTxt.text = newColor.ToString();
+        safeColorTxt.color = colorMaterials[(int)newColor].color;
     }
 }
