@@ -13,8 +13,8 @@ public class ColorManager : NetworkBehaviour
     //Variable sincronizada con el color seguro de cada ronda
     public NetworkVariable<TileColor> safeColor = new NetworkVariable<TileColor>();
 
-    //Todos los tiles del escenario
-    [SerializeField] private ColorTile[] tiles;
+    //Todos los tiles del escenario (guardados en TileGrid)
+    [SerializeField] private List<ColorTile> tiles;
     //Materiales para los colores de los tiles
     [SerializeField] private Material[] colorMaterials;
 
@@ -23,6 +23,11 @@ public class ColorManager : NetworkBehaviour
     private Dictionary<TileColor, int> availableColors = new();
     private void Start()
     {
+        //Buscar el grid con todos los tiles y guardarlos
+        TileGrid grid = FindFirstObjectByType<TileGrid>();
+        //Guardar todos los tiles que tenga el grid
+        tiles = new List<ColorTile>(grid.Tiles);
+
         //Añadir al diccionario todos los colores y la cantidad de tiles que habrá de cada color (7)
         for (int i = 0; i < 5; i++)
         {
@@ -49,7 +54,7 @@ public class ColorManager : NetworkBehaviour
     void RandomizeColors()
     {
         //Crear un array con todos los colores aleatorios que se irán generando
-        TileColor[] randomColors = new TileColor[tiles.Length];
+        TileColor[] randomColors = new TileColor[tiles.Count];
         //Rellenar el array con colores aleatorios
         for (int i = 0; i < randomColors.Length; i++)
         {
@@ -68,7 +73,7 @@ public class ColorManager : NetworkBehaviour
         int materialIndex = 0;
 
         //Asignar a cada tile su color correspondiente calculado por el server
-        for (int i = 0; i < tiles.Length; i++)
+        for (int i = 0; i < tiles.Count; i++)
         {
             randomColor = randomColors[i];
             //Calcular el índice del array de materiales para este color

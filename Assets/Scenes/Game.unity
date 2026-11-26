@@ -246,6 +246,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &325519635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8920991314512066046, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
+  m_PrefabInstance: {fileID: 1040325880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &325519636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325519635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e3dbddc9169454ba752cf6da8fd097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TileGrid
+  Tiles: []
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +401,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
+--- !u!1 &983561727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983561729}
+  - component: {fileID: 983561728}
+  m_Layer: 0
+  m_Name: ColorManagerSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &983561728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983561727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0fb14a76b84584eb94f9f1d1e250bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorManagerSpawner
+  colorManagerPrefab: {fileID: 17183450472924713, guid: 6ae1f3fb6a5bab24ba41c7ea08108d42, type: 3}
+--- !u!4 &983561729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983561727}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1086, y: 0.05, z: -0.41129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1029490678
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,513 +549,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8920991314512066046, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 325519636}
   m_SourcePrefab: {fileID: 100100000, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
---- !u!114 &1040325881 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9135027717610249703, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325882 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 747415915938419009, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325883 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5902786861773904719, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325884 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4932498819500482072, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325885 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7926169021911534079, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325886 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7296041283772735913, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325887 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8134212339198340801, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325888 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8170985931671146127, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325889 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1554465745237509769, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325890 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 56332821109887652, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325891 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1335604344180698749, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325892 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 573393539945877121, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325893 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5103576810804899063, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325894 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3461470544699358791, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325895 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5965504744139167366, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325896 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2191666312905250635, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325897 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 780469000751606247, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325898 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2447844130456209620, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325899 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3444130556618997786, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325900 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1538793190896886082, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325901 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 419265281505783180, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325902 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6085894290348727866, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325903 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 607179937937956991, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325904 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3788207201411484487, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325905 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9081262727956510287, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325906 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2477176669642570000, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325907 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6196554540531220131, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325908 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 711590933450372977, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325909 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1589707065272842631, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325910 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9178217656445781752, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325911 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7122998421168558277, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325912 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1133991226495803236, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325913 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6288583707366943395, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325914 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5230584113704097908, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!114 &1040325915 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4258080387116309109, guid: c3cf55f90634caa4080920ef9409bca4, type: 3}
-  m_PrefabInstance: {fileID: 1040325880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe925a5a14ae0d4fa10f5511fde87ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorTile
---- !u!1 &1446277050
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1446277052}
-  - component: {fileID: 1446277053}
-  - component: {fileID: 1446277051}
-  m_Layer: 0
-  m_Name: ColorManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1446277051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446277050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0560fac3d9a12674b909bbcb9d42b3a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorManager
-  ShowTopMostFoldoutHeaderGroup: 1
-  safeColor:
-    UpdateTraits:
-      MinSecondsBetweenUpdates: 0
-      MaxSecondsBetweenUpdates: 0
-    m_InternalValue: 0
-  tiles:
-  - {fileID: 1040325915}
-  - {fileID: 1040325914}
-  - {fileID: 1040325913}
-  - {fileID: 1040325912}
-  - {fileID: 1040325911}
-  - {fileID: 1040325910}
-  - {fileID: 1040325909}
-  - {fileID: 1040325908}
-  - {fileID: 1040325907}
-  - {fileID: 1040325906}
-  - {fileID: 1040325905}
-  - {fileID: 1040325904}
-  - {fileID: 1040325903}
-  - {fileID: 1040325902}
-  - {fileID: 1040325901}
-  - {fileID: 1040325900}
-  - {fileID: 1040325899}
-  - {fileID: 1040325898}
-  - {fileID: 1040325897}
-  - {fileID: 1040325896}
-  - {fileID: 1040325895}
-  - {fileID: 1040325894}
-  - {fileID: 1040325893}
-  - {fileID: 1040325892}
-  - {fileID: 1040325891}
-  - {fileID: 1040325890}
-  - {fileID: 1040325889}
-  - {fileID: 1040325888}
-  - {fileID: 1040325887}
-  - {fileID: 1040325886}
-  - {fileID: 1040325885}
-  - {fileID: 1040325884}
-  - {fileID: 1040325883}
-  - {fileID: 1040325882}
-  - {fileID: 1040325881}
-  colorMaterials:
-  - {fileID: 2100000, guid: 67818e7c1344ef241b3ceae8d14291fc, type: 2}
-  - {fileID: 2100000, guid: 49a5725e764d07b4ab3274a419d0fedc, type: 2}
-  - {fileID: 2100000, guid: a9be609cb66963d479b1492212c52d46, type: 2}
-  - {fileID: 2100000, guid: deec55431f5fa244ba4924adf86ce54b, type: 2}
-  - {fileID: 2100000, guid: 9becb35f45dd3d143860e2d1c0cde4bc, type: 2}
---- !u!4 &1446277052
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446277050}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.44464, y: 0, z: -3.03641}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1446277053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446277050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 4020429213
-  InScenePlacedSourceGlobalObjectIdHash: 0
-  m_InScenePlacedDisabledByDefault: 0
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  m_InScenePlaced: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 0
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1000,5 +561,5 @@ SceneRoots:
   - {fileID: 961739753}
   - {fileID: 203844589}
   - {fileID: 1029490680}
-  - {fileID: 1446277052}
   - {fileID: 1040325880}
+  - {fileID: 983561729}
